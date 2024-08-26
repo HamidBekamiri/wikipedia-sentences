@@ -1,0 +1,20 @@
+{
+    "name": "Example Python Project",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+        "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+        "editor.tabSize": 4
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ],
+    "forwardPorts": [5000],
+    "postCreateCommand": "echo 'Welcome to your dev container!'",
+    "remoteUser": "vscode"
+}
